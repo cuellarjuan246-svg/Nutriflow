@@ -40,11 +40,6 @@ urlpatterns = [
     ),
 
     path(
-        'app_pedidos/',
-        include('app_pedidos.urls')
-    ),
-
-    path(
         'app_pagos/',
         include('app_pagos.urls')
     ),
