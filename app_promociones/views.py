@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def inicio_promociones(request):
+    return render(
+        request,
+        'app_promociones/promociones.html'
+    )

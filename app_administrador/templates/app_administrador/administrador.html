@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Administrador | NutriFlow</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #eef7ff, #effcf5);
+        }
+
+        .login {
+            width: 420px;
+            padding: 32px;
+            background: white;
+            border: 1px solid #dddddd;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px #ccd8d5;
+        }
+
+        .logo {
+            width: 65px;
+            height: 65px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            color: white;
+            font-size: 30px;
+            background: linear-gradient(135deg, #00bd84, #009cff);
+        }
+
+        h1 {
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .subtitulo {
+            margin-bottom: 25px;
+            text-align: center;
+            color: #6d7180;
+        }
+
+        .roles {
+            display: flex;
+            padding: 4px;
+            margin-bottom: 28px;
+            background: #ededf1;
+            border-radius: 12px;
+        }
+
+        .roles a {
+            width: 33.33%;
+            padding: 9px 3px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            border-radius: 10px;
+        }
+
+        .roles .activo {
+            background: white;
+            box-shadow: 0 1px 4px #cccccc;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 7px;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 8px;
+            background: #f0f0f3;
+            font-size: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            margin-top: 18px;
+            border: none;
+            border-radius: 8px;
+            background: #2165f5;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #174fc5;
+        }
+
+        .mensaje {
+            margin-top: 25px;
+            padding: 15px;
+            color: #173b88;
+            background: #edf4ff;
+            border-radius: 7px;
+        }
+
+        .seguridad {
+            margin-top: 20px;
+            padding: 14px;
+            text-align: center;
+            color: #174bc0;
+            border: 1px solid #9fc3ff;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="login">
+
+        <div class="logo">🛍</div>
+
+        <h1>Sistema de Ventas</h1>
+
+        <p class="subtitulo">
+            Gestión de Suplementos Deportivos
+        </p>
+
+        <nav class="roles">
+            <a href="/app_administrador/" class="activo">
+                👤 Admin
+            </a>
+
+            <a href="/app_vendedor/">
+                🛍 Vendedor
+            </a>
+
+            <a href="/app_clientes/">
+                ◉ Cliente
+            </a>
+        </nav>
+
+        <form>
+            <label for="correo">
+                Correo electrónico
+            </label>
+
+            <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="admin@ejemplo.com"
+                required
+            >
+
+            <label for="contrasena">
+                Contraseña
+            </label>
+
+            <input
+                type="password"
+                id="contrasena"
+                name="contrasena"
+                placeholder="Ingrese su contraseña"
+                required
+            >
+
+            <button type="submit">
+                Ingresar como Administrador
+            </button>
+        </form>
+
+        <div class="mensaje">
+            👤 Solo personal autorizado
+        </div>
+
+        <div class="seguridad">
+            🔒 <strong>Sistema de Autenticación Seguro</strong>
+
+            <br><br>
+
+            Credenciales válidas requeridas para administradores
+        </div>
+
+    </main>
+</body>
+</html>

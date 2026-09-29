@@ -58,4 +58,14 @@ urlpatterns = [
         'app_usuarios/',
         include('app_usuarios.urls')
     ),
+
+        path(
+        'app_vendedor/',
+        include('app_vendedor.urls')
+    ),
+
+    path(
+        'app_administrador/',
+        include('app_administrador.urls')
+    ),
 ]

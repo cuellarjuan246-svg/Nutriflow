@@ -1,16 +1,20 @@
-from django.http import HttpResponse
 from django.urls import path
+from . import views
+
 
 app_name = 'app_clientes'
 
+
 urlpatterns = [
-    path('', lambda request: HttpResponse("""
-        <body style="font-family: Arial; text-align: center; background: #eeeeee;">
-            <div style="background: white; width: 60%; margin: 100px auto; padding: 30px;">
-                <h1 style="color: green;">Bienvenido a Clientes</h1>
-                <p>Aquí se administra la información de los clientes.</p>
-                <a href="/">Volver al inicio</a>
-            </div>
-        </body>
-    """), name='bienvenido_clientes'),
+    path(
+        '',
+        views.inicio_clientes,
+        name='bienvenido'
+    ),
+
+    path(
+        'registro/',
+        views.registro_cliente,
+        name='registro'
+    ),
 ]

@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def inicio_categorias(request):
+    return render(
+        request,
+        'app_categorias/categorias.html'
+    )

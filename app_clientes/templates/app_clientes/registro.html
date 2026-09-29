@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de cliente</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .caja {
+            width: 380px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px #cccccc;
+        }
+
+        h1, p {
+            text-align: center;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 11px;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+
+        input {
+            border: none;
+            border-radius: 6px;
+            background: #f0f0f3;
+        }
+
+        button {
+            border: none;
+            border-radius: 6px;
+            background: #18a689;
+            color: white;
+            cursor: pointer;
+        }
+
+        a {
+            color: #18a689;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="caja">
+        <h1>Crear cuenta</h1>
+        <p>Regístrate como cliente de NutriFlow</p>
+
+        <form>
+            <input type="text" placeholder="Nombre completo">
+            <input type="email" placeholder="Correo electrónico">
+            <input type="password" placeholder="Contraseña">
+            <input type="password" placeholder="Confirmar contraseña">
+
+            <button type="submit">Registrarme</button>
+        </form>
+
+        <p>
+            <a href="{% url 'app_clientes:bienvenido' %}">
+                Volver al inicio de sesión
+            </a>
+        </p>
+    </main>
+</body>
+</html>

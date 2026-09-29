@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Usuarios | NutriFlow</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: #eef7f6;
+        }
+
+        .contenedor {
+            width: 750px;
+            padding: 35px;
+            text-align: center;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px #cccccc;
+        }
+
+        h1 {
+            color: #1b86a8;
+        }
+
+        .roles {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            margin-top: 30px;
+        }
+
+        .rol {
+            width: 200px;
+            padding: 25px 15px;
+            background: #f4f7f8;
+            border: 1px solid #dddddd;
+            border-radius: 10px;
+        }
+
+        .rol h2 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .icono {
+            font-size: 35px;
+        }
+
+        .rol a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 9px 15px;
+            color: white;
+            background: #1b86a8;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .rol a:hover {
+            background: #126c88;
+        }
+
+        .inicio {
+            display: inline-block;
+            margin-top: 30px;
+            color: #1b86a8;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="contenedor">
+        <h1>Gestión de Usuarios</h1>
+
+        <p>
+            Selecciona el tipo de usuario que deseas consultar.
+        </p>
+
+        <section class="roles">
+
+            <article class="rol">
+                <div class="icono">👤</div>
+
+                <h2>Administrador</h2>
+
+                <p>
+                    Gestiona los módulos y la información del sistema.
+                </p>
+
+                <a href="/app_administrador/">
+                    Ver administrador
+                </a>
+            </article>
+
+            <article class="rol">
+                <div class="icono">🛍</div>
+
+                <h2>Vendedor</h2>
+
+                <p>
+                    Registra ventas y atiende a los clientes.
+                </p>
+
+                <a href="/app_vendedor/">
+                    Ver vendedor
+                </a>
+            </article>
+
+            <article class="rol">
+                <div class="icono">◉</div>
+
+                <h2>Cliente</h2>
+
+                <p>
+                    Consulta productos y realiza sus compras.
+                </p>
+
+                <a href="/app_clientes/">
+                    Ver cliente
+                </a>
+            </article>
+
+        </section>
+
+        <a href="/" class="inicio">
+            Volver al inicio
+        </a>
+    </main>
+</body>
+</html>
